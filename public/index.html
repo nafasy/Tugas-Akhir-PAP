@@ -2144,79 +2144,65 @@
     </div>
 </div>
 
-<footer class="bg-[--hitam] text-[--putih] py-8">
-    <div class="mx-auto px-4">
-               <div class="relative">
-                   <div class="logo mb-4 md:mb-0 absolute left-0">
-                       <img class="company-logo-icon h-10" alt="Logo" src="img/logo bentala putih.png">
-                   </div>
-               </div>
-               <div class="flex md:flex-row justify-center items-center">
-                   <div class="flex flex-row space-x-14 mb-4 md:mb-0">
-                       <a href="#" class="hover:underline">Koleksi</a>
-                       <a href="#" class="hover:underline">FAQ</a>
-                       <a href="#" class="hover:underline">Customer Service</a>
-                       <a href="#" class="hover:underline">Pengembalian</a>
-                       <a href="#" class="hover:underline">Shipping Policy</a>
-                   </div>
-               </div>
-               <div class="relative">
-                   <div class="social-links flex space-x-4 absolute right-0 ">
-                       <i class="fa-brands fa-facebook fa-lg cursor-pointer" onclick="openVideo()"></i>
-                       <i class="fa-brands fa-instagram fa-lg cursor-pointer" onclick="openInstagram()"></i>
-                       <i class="fa-brands fa-twitter fa-lg cursor-pointer" onclick="openX()"></i>
-                       <i class="fa-brands fa-linkedin fa-lg cursor-pointer" onclick="openlinkedin()"></i>
-                       <i class="fa-brands fa-youtube fa-lg cursor-pointer" onclick="openyt()"></i>
-                   </div>
-                   <script>
-                       const logo = document.getElementById('logo');
-                       logo.addEventListener('click', function() {
-                           window.location.href = 'index.html'; 
-                       });
-               
-                       function openInstagram() {
-                           window.open('https://www.instagram.com/raffi1__/', '_blank');
-                       }
-               
-                       function openX() {
-                           window.open('https://x.com/Raffi1__', '_blank');
-                       }
-               
-                       function openlinkedin() {
-                           window.open('https://www.linkedin.com/in/muhamadraffi/', '_blank');
-                       }
-               
-                       function openyt() {
-                           window.open('https://www.instagram.com/raffi1__/', '_blank');
-                       }
-               
-                       function openVideo() {
-                           const videoPopup = document.getElementById('videoPopup');
-                           const myVideo = document.getElementById('myVideo');
-                           videoPopup.style.display = 'flex'; 
-                           myVideo.play(); 
-                       }
-               
-                       function answer(response) {
-                           const videoPopup = document.getElementById('videoPopup');
-                           videoPopup.style.display = 'none'; 
-                           const myVideo = document.getElementById('myVideo');
-                           myVideo.pause(); 
-                           myVideo.currentTime = 0; 
-                       }
-                   </script>
-               </div>
-               <div class="credits mt-8">
-                   <div class="divider border-t border-gray-600 mb-4"></div>
-                   <div class="flex flex-col md:flex-row justify-center items-center">
-                       <div class="flex space-x-4 text-sm mt-2 md:mt-0">
-                           <div class="text-sm">© 2024 Relume. All rights reserved.</div>
-                           <a href="#" class="hover:underline">Privacy Policy</a>
-                           <a href="#" class="hover:underline">Terms of Service</a>
-                           <a href="#" class="hover:underline">Cookies Settings</a>
-                       </div>
-                   </div>
-               </div>
+<footer class="bg-[--hitam] text-[--putih]">
+    <div class="mx-auto px-4 py-8">
+            <div class="relative">
+                <div class="logo mb-4 md:mb-0 absolute left-0">
+                    <img class="company-logo-icon h-10" alt="Logo" src="img/logo bentala putih.png">
+                </div>
+            </div>
+            <div class="flex md:flex-row justify-center items-center">
+                <div class="flex flex-row space-x-14 mb-4 md:mb-0">
+                    <a href="#" class="hover:underline">Koleksi</a>
+                    <a href="#" class="hover:underline">FAQ</a>
+                    <a href="#" class="hover:underline">Customer Service</a>
+                    <a href="#" class="hover:underline">Pengembalian</a>
+                    <a href="#" class="hover:underline">Shipping Policy</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="social-links flex space-x-4 absolute right-0">
+                    <i class="fa-brands fa-facebook fa-lg cursor-pointer" onclick="openVideo()"></i>
+                    <i class="fa-brands fa-instagram fa-lg cursor-pointer" onclick="openInstagram()"></i>
+                    <i class="fa-brands fa-twitter fa-lg cursor-pointer" onclick="openX()"></i>
+                    <i class="fa-brands fa-linkedin fa-lg cursor-pointer" onclick="openlinkedin()"></i>
+                    <i class="fa-brands fa-youtube fa-lg cursor-pointer" onclick="openyt()"></i>
+                </div>
+                <script>
+                    const logo = document.getElementById('logo');
+                    logo.addEventListener('click', function() {
+                        window.location.href = 'index.html'; 
+                    });
+            
+            
+                    function openVideo() {
+                        const videoPopup = document.getElementById('videoPopup');
+                        const myVideo = document.getElementById('myVideo');
+                        videoPopup.style.display = 'flex'; 
+                        myVideo.play(); 
+                    }
+            
+                    function answer(response) {
+                        const videoPopup = document.getElementById('videoPopup');
+                        videoPopup.style.display = 'none'; 
+                        const myVideo = document.getElementById('myVideo');
+                        myVideo.pause(); 
+                        myVideo.currentTime = 0; 
+                    }
+                </script>
+            </div>
+            <div class="credits mt-8">
+                <div class="divider border-t border-[--putih] mb-4"></div>
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="flex space-x-4 text-sm mt-2 md:mt-0">
+                        <div class="text-sm">© 2024 Relume. All rights reserved.</div>
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Terms of Service</a>
+                        <a href="#" class="hover:underline">Cookies Settings</a>
+                    </div>
+                </div>
+            </div>
+    </div>
 </footer>
                
                <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-75 items-center justify-center hidden">
